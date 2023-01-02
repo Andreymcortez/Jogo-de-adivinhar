@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <title>Jogo da Adivinhação</title>
+    </head>
+    <body>
+        <button id="btn" type="button">Começar o jogo</button>
+        <script>
+            $('#btn').click(() => {
+                $('#gameBoard').fadeIn(3000),
+                $('#btn').fadeOut(0.5)
+            })
+        </script>
+        <div id="gameBoard"></div>
+
+        <div id="gameOver">
+            <div>
+                Parábens, você completou o jogo
+            </div>
+            <button id="restart" onclick="restart()">Jogar Novamente</button>
+        </div>
+
+        <script src="game.js"></script>
+        <script src="script.js"></script>
+    </body>
+    </html>
